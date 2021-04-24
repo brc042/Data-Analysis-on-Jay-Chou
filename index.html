@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset='UTF-8' />
+	<title>Jay Chou Data Analysis 周杰倫數據分析 (2000-2016)</title>
+	<link rel='stylesheet' type='text/css' href='style.css'> 
+	<script src='https://code.highcharts.com/highcharts.js'></script>
+	<script src='https://code.highcharts.com/highcharts-more.js'></script>
+    <script src='https://code.highcharts.com/modules/exporting.js'></script>
+	<script src='https://code.highcharts.com/modules/export-data.js'></script>
+</head>
+
+<body>
+	<h1>Jay Chou Data Analysis 周杰倫數據分析 (2000-2016)</h1>
+
+	<h2>by Brian Cheng, Sep 2020</h2>
+	
+	<p>This is a Python project where I used Spotify API data and data I compiled myself to analyze songs from Jay Chou's studio albums (up to 2016).</p>
+
+	<p>Code where I obtained, cleaned, and analyzed data in more detail 為數據採取，整理，與更深度分析所寫的程式: 
+		<a href = 'https://github.com/brc042/Data-Analysis-on-Jay-Chou'>(github.com/brc042/Data-Analysis-on-Jay-Chou)</a>
+	</p>
+	
+	<p>Here are some of my key takeaways 以下是我分析後的幾個重點:</p>
+
+	<br>
+	<hr />
+	<br>
+
+	<h2>1. Jay Chou's most-frequent collaborating lyricist is 方文山 and most-frequent collaborating arranger is 林邁可.</h2>
+	<h2>周杰倫最常合作的作詞人是方文山，最常合作的編曲人是林邁可。</h2>
+	
+	<section id = 'lyricistChart'></section>
+
+	<br>
+	<br>
+	
+	<section id = 'arrangerChart'></section>
+	
+	<br>
+	<hr />
+	<br>
+	
+	<h2>2. The longer a Jay Chou song is, the more likely that it will be popular on Spotify.</h2>
+	<h2>越長的周杰倫歌曲越有可能在Spotify上有高的人氣。</h2>
+
+	<section id = 'popularityDurationChart'></section>
+
+	<br>
+	<hr />
+	<br>
+
+	<h2>3. Jay Chou's most used keys are C and D major. Jay Chou hasn't used F#M/GbM in his studio albums yet as of 2016.</h2>
+	<h2>周杰倫最常用的調性是C和D大調。周杰倫至今 (2016) 還未在主專輯裡使用過F#M/GbM大調。</h2>
+
+	
+	<section id = 'keyChart'></section>
+	
+	<br>
+	<br>
+	
+	<section id = 'keyPieChart'></section>
+
+	<br>
+	<hr />
+	<br>
+	
+	<h3>Thanks to Spotify API for the data and Highcharts for the non-commercial license!</h3>
+
+	<p>Brian Cheng, Sep 2020</p>
+
+	<script src = 'main.js'></script>
+</body>
+
+</html>
